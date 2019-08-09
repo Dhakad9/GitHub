@@ -1,0 +1,31 @@
+package pareek;
+
+import java.util.*;
+
+import pareek.account;
+
+
+class batman {
+	static int with_money;
+	static int money_dep;
+
+	public static void main(String[] args) 
+	{
+		account ac= new account();
+		ac.input();
+		ac.output();
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Money  to be taken out");
+		with_money=sc.nextInt();
+		
+	if(with_money>money_dep)
+	{
+		System.out.println("You dont have enough balance");
+	}
+	else
+	{
+		System.out.println("Collect your money");
+	}
+	}
+
+}
